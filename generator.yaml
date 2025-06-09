@@ -1,0 +1,55 @@
+provider:
+  name: runpod
+resources:
+  pod:
+    create:
+      path: /pods
+      method: POST
+    read:
+      path: /pods/{podId}
+      method: GET
+    update:
+      path: /pods/{podId}
+      method: PATCH
+    delete:
+      path: /pods/{podId}
+      method: DELETE
+  endpoint:
+    create:
+      path: /endpoints
+      method: POST
+    read:
+      path: /endpoints/{endpointId}
+      method: GET
+    update:
+      path: /endpoints/{endpointId}
+      method: PATCH
+    delete:
+      path: /endpoints/{endpointId}
+      method: DELETE
+  container_registry_auth:
+    create:
+      path: /containerregistryauth
+      method: POST
+    read:
+      path: /containerregistryauth/{containerRegistryAuthId}
+      method: GET
+    update:
+      path: /containerregistryauth/{containerRegistryAuthId}
+      method: PATCH
+    delete:
+      path: /containerregistryauth/{containerRegistryAuthId}
+      method: DELETE
+  network_volume:
+    create:
+      path: /networkvolumes
+      method: POST
+    read:
+      path: /networkvolumes/{networkVolumeId}
+      method: GET
+    update:
+      path: /networkvolumes/{networkVolumeId}
+      method: PATCH
+    delete:
+      path: /networkvolumes/{networkVolumeId}
+      method: DELETE
